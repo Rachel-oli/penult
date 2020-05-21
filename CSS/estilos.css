@@ -1,0 +1,171 @@
+/*Reset do CSS*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.fashioninteriors.co.uk/cache/nproducts/ashley_wilde/cath_kidston/cath_kidston_volume_1/vintage_bunch/_optimized/vintagebunchmu__2000_1420.jpg);
+    font-family: Arial;
+  }
+
+  /*se a tela tiver pelo menos 700px vai carregar todos esses estilos*/
+  @media (min-width: 600px) {
+    .site-title {
+     font-size: 3em;
+    }
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    background-color:#eee; 
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(109, 109, 109);
+    transition: background-color 1s, color 1s;
+  }
+
+  .menu a:hover{
+    background-color: rgb(221, 221, 221);
+    color: black;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: teal;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color:#aa6580;
+  }
+
+  .site-subtitle,
+  .site-title {
+    text-align: center;
+  }
+
+  .site-title {
+    font-weight: normal;
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .portfolio {
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right:20px;
+  }
+
+  .contato {
+    padding-left: 20px;
+    padding-right:20px;
+    height: 300px;
+  }
+
+   .portfolio .grid {
+    display: grid;
+    gap: 3em; 
+    background-color: white;
+    align-content: center;
+  }
+
+  @media (min-width: 405px) {
+    .portfolio .grid {
+    grid-template-columns: 150px 150px;  
+    justify-content: center;
+    height: calc(100vh - 83px);
+    }
+  }
+
+  @media (min-width: 708px) {
+    .portfolio .grid {
+    grid-template-columns: 150px 150px 150px;  
+    justify-content: center;
+    }
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .contato h2,
+  .portfolio h2 {
+    font-family: 'Playfair Display SC', serif;
+    padding: 20px;
+    font-size: 2em;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .img-portfolio {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+}
+
+  .img-portfolio:hover {
+    border: solid 1px rgb(109, 109, 109);
+  }
+
+  .contato a {
+    color: #c27b83;
+    font-size: 4em;
+    transition: color 1s;
+  }
+
+  .contato .icons {
+    text-align: center;
+  }
+
+  .contato .grid {
+    background-color: white;
+    padding: 20px;
+    height: 300px;
+  }
+
+  .contato a:hover {
+    color:#aa6580;
+  }
+
+  ::selection {
+    background-color: #c27b83;
+  }
+
+  .creditos {
+    background-color: #eee;
+    font-size: 12px;
+    font-family: Arial;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
